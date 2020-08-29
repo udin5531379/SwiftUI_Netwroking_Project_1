@@ -10,4 +10,8 @@ import Foundation
 
 class NetworkingManager: ObservableObject {
     @Published var dataList = [DataListEntry]() //published is called data binding
+    
+    init() {
+        guard let url = URL(string: "https://jsonplaceholder.typicode.com/posts")
+    }
 }
